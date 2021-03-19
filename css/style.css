@@ -446,4 +446,13 @@ button {
 .ap-section{
     padding: 90px 0;
     background: var(--color);
+    color: #C5D0E6;
+   
+}
+.picture{
+  width: 380px;
+}
+.article-img{
+  width: 100%;
+  height: auto;
 }
