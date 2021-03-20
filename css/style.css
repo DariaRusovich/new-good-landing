@@ -431,6 +431,7 @@ button {
   font-size: 18px;
   line-height: 1.17;
   font-weight: 700;
+  border-bottom: 1px solid transparent;
 }
 .article-text>a:hover{
     border-bottom: 1px solid var(--color);
