@@ -371,7 +371,6 @@ button {
 
 .section-title {
   text-transform: uppercase;
-  color: var(--text-color);
   text-align: center;
 }
 .section-title span {
@@ -381,6 +380,10 @@ button {
   width: 600px;
   margin-top: 20px;
   font-weight: 700;
+}
+.darker-color {
+  color: var(--text-color);
+  
 }
 .section-articles {
   display: flex;
@@ -444,12 +447,30 @@ button {
 /*===========AP-SECTION STYLES START============*/
 
 .ap-section{
-    padding: 90px 0;
     background: var(--color);
     color: #C5D0E6;
+    padding: initial;  
    
 }
-.picture{
+
+.article-ap{
+  display: flex;
+  position: relative;
+  top: 120px;
+  
+}
+.article-light{
+  width: 400px;
+  padding: 83px 0;
+}
+.article-light span{
+  width: 400px;
+}
+.lighter-color{
+ color: #C9CDD5;
+ text-align: start;
+}
+.article-ap .picture{
   width: 380px;
 }
 .article-img{
