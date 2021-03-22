@@ -582,3 +582,50 @@ button {
 .test-slider-prev{
   transform: scaleX(-1);
 }
+/*===========AP-SECTION STYLES END============*/
+
+/*===========FUTURE-SECTION STYLES START============*/
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature-cards>.card+.card{
+  margin-left: 30px;
+}
+
+.card {
+  padding: 55px 47px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.14);
+  border-radius: 5px;
+  color: #2c2e30;
+  text-align: center;
+}
+.icon-back{
+  padding: 35px 33px 35px 37px;
+  border-radius: 50%;
+  background: #F0F3FF;
+  display: flex;
+  align-items: center;
+}
+
+.card-icon{
+  width: 35px;
+  height: 35px;
+}
+
+.card-title {
+  width: 250px;
+  margin-top: 40px;
+  display: inline;
+}
+.card p {
+  width: 300px;
+  margin-top: 20px;
+  color:  #54565A;
+}
