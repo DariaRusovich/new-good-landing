@@ -446,6 +446,29 @@
                   </h4>
                   <img src="./img/logo-client.svg" alt="AirBNB logo" />
                 </div>
+
+                <img
+                  class="pag-img"
+                  src="./img/client.webp"
+                  alt="Frank Hardy Creative Director"
+                />
+              </div>
+
+              <div class="swiper-slide">
+                <div class="slide-text">
+                  <p>
+                    “Life before xPider was very chaotic — we got a lot of phone
+                    calls, a lot of mistyped orders. So with Company, the
+                    ability to see the order directly from the customer makes it
+                    so streamlined.”
+                  </p>
+                  <h4>
+                    <span>Frank Hardy</span> <br />
+                    Creative Director
+                  </h4>
+                  <img src="./img/logo-client.svg" alt="AirBNB logo" />
+                </div>
+
                 <img
                   class="pag-img"
                   src="./img/client.webp"
@@ -468,31 +491,12 @@
                   <img src="./img/logo-client.svg" alt="AirBNB logo" />
                 </div>
                 <img
-                  class="pag-img"
-                  src="./img/client.webp"
+                  class="pag-img swiper-lazy"
+                  data-src="./img/client.webp"
+                  src="img/1*1.png"
                   alt="Frank Hardy Creative Director"
                 />
-              </div>
-
-              <div class="swiper-slide">
-                <div class="slide-text">
-                  <p>
-                    “Life before xPider was very chaotic — we got a lot of phone
-                    calls, a lot of mistyped orders. So with Company, the
-                    ability to see the order directly from the customer makes it
-                    so streamlined.”
-                  </p>
-                  <h4>
-                    <span>Frank Hardy</span> <br />
-                    Creative Director
-                  </h4>
-                  <img src="./img/logo-client.svg" alt="AirBNB logo" />
-                </div>
-                <img
-                  class="pag-img"
-                  src="./img/client.webp"
-                  alt="Frank Hardy Creative Director"
-                />
+                <div class="swiper-lazy-preloader"></div>
               </div>
             </div>
           </div>
@@ -514,11 +518,15 @@
             </p>
           </div>
           <form name="contactForm" class="check-mail">
-            <input type="email" name="customEmail" placeholder="Enter your email to start" aria-label="Enter your email to start" />
+            <input
+              type="email"
+              name="customEmail"
+              placeholder="Enter your email to start"
+              aria-label="Enter your email to start"
+            />
             <button type="submit" class="menu-btn btn-check">
               Get started
             </button>
-          
           </form>
           <h3>No credit card required.</h3>
         </div>
@@ -553,6 +561,11 @@
             clickable: true,
           },
           speed: 800,
+          preloadImages: false,
+          // Enable lazy loading
+          lazy: {
+            loadPrevNext: true,
+          }
         });
       </script>
 
