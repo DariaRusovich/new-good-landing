@@ -23,9 +23,9 @@
 @font-face {
   font-family: "Aileron";
   font-style: italic;
-  font-weight: 900;
+  font-weight: 200;
   font-display: swap;
-  src: url(../fonts/aileron/Aileronblackitalic.woff2);
+  src: url(../fonts/aileron/Aileronlightitalic.woff2);
 }
 
 /*===========CSS RESET START============*/
@@ -236,7 +236,7 @@ button {
 /*===========HEADER STYLES START============*/
 .header {
   position: absolute;
-  top: 32px;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
@@ -244,6 +244,7 @@ button {
 .header-nav {
   display: flex;
   justify-content: space-between;
+  padding-top: 30px;
 }
 .logo {
   width: 33px;
@@ -578,11 +579,10 @@ button {
 /*===========AP-SECTION STYLES END============*/
 
 /*===========FUTURE-SECTION STYLES START============*/
-.feature-content{
-  background-color: #151C32;
-  padding: ;
+.feature-content {
+  background-color: #151c32;
 }
-.section-skew{
+.section-skew {
   position: relative;
   top: 120px;
 }
@@ -593,7 +593,7 @@ button {
   align-items: center;
   margin-top: 85px;
 }
-.feature-cards>.card+.card{
+.feature-cards > .card + .card {
   margin-left: 30px;
 }
 
@@ -608,15 +608,15 @@ button {
   color: #2c2e30;
   text-align: center;
 }
-.icon-back{
+.icon-back {
   padding: 35px;
   border-radius: 50%;
-  background: #F0F3FF;
+  background: #f0f3ff;
   display: flex;
   align-items: center;
 }
 
-.card-icon{
+.card-icon {
   width: 35px;
   height: 35px;
 }
@@ -626,11 +626,77 @@ button {
   margin-top: 40px;
   display: inline;
 }
-.card-title span{
+.card-title span {
   color: var(--color);
 }
 .card p {
   width: 300px;
   margin-top: 20px;
-  color:  #54565A;
+  color: #54565a;
+}
+
+/*=============== PAGINATION SWIPER SECTION =================*/
+.pag-section{
+  padding-top: 250px;
+}
+.pagination-slider {
+  margin-top: 120px;
+  
+}
+.pagination-slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+.slide-text p {
+  font-size: 28px;
+  line-height: 1.71;
+  color: #c9cdd5;
+  font-style: italic;
+  width: 421px;
+}
+.slide-text h4 {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #7e8085;
+  
+}
+.slide-text span {
+  font-size: 21px;
+  line-height: 1.19;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 40px 0 10px 0;
+  color: #fff;
+}
+.slide-text img{
+  margin-top: 20px;
+  
+}
+
+.pag-img {
+  width: 400px;
+  height: 450px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-left: 50px;
+  position: relative;
+  
+}
+.pagination-img {
+ display: flex;
+ justify-content: center;
+
+
+ /* position: absolute;
+ top: 0; */
+}
+.pagination-img .swiper-pagination-bullet {
+  width: 75px;
+  height: 9px;
+  border-radius: 999px;
+  background-color: var(--color);
+  margin-top: 25px;
+}
+.pagination-img .swiper-pagination-bullet:not(:first-child) {
+  margin-left: 15px;
 }
