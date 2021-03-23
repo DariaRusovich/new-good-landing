@@ -380,7 +380,7 @@ button {
 
 /*===========SECTION STYLES START============*/
 .section {
-  padding-top: 125px;
+  padding: 125px 0 0 0;
 }
 .title-wrapp {
   display: flex;
@@ -580,7 +580,7 @@ button {
 
 /*===========FUTURE-SECTION STYLES START============*/
 .feature-content {
-  background-color: #151c32;
+  background: #151C32;
 }
 .section-skew {
   position: relative;
@@ -635,9 +635,48 @@ button {
   color: #54565a;
 }
 
+/*===========FUTURE-SECTION STYLES END============*/
+
+/*===========GUIDE-SECTION STYLES START============*/
+.guide-section{
+  padding: 225px 0;
+}
+.guide-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  margin-top: 95px;
+   
+}
+.guide-article{
+  width: 350px;
+}
+.guide-article .article{
+  width: 100%;
+ 
+}
+.guide-article .article:not(:first-child){
+ margin-top: 35px;
+}
+
+.guide-img{
+  width: 540px;;
+  height: 650px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.guide-article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*=============== PAGINATION SWIPER SECTION =================*/
 .pag-section{
-  padding-top: 250px;
+  background: #151C32;
+  padding: 125px 0;
+
 }
 .pagination-slider {
   margin-top: 120px;
