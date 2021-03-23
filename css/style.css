@@ -228,9 +228,9 @@ button {
 .link:hover::after {
   width: 100%;
 }
-.wrapper {
+/* .wrapper {
   overflow-x: hidden;
-}
+} */
 /*===========COMMON STYLES END============*/
 
 /*===========HEADER STYLES START============*/
@@ -786,4 +786,52 @@ button {
   font-size: 18px;
   margin-top: 15px;
   color: #c9cdd5;
+}
+
+
+/*============ CHECK-SECTION END =============*/
+
+
+.footer{
+  padding: 125px 100px;
+  position: relative;
+
+}
+.logo-shape{
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 680px;
+  height: 600px;
+  z-index: -1;
+  
+}
+
+.footer-nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-menu:not(:first-child){
+  margin-left: 110px;
+}
+.logo-footer{
+  align-self: flex-start;
+}
+.footer-nav .footer-title{
+  font-size: 18px;
+line-height: 1.17;
+font-weight: 700;
+}
+.footer-list{
+  margin-top: 15px;
+  color: #7e8085;
+}
+.logo-footer a{
+  padding: 0 10px 10px 10px;
+}
+
+.footer-list a{
+  padding: 5px 10px 5px 0;
 }
