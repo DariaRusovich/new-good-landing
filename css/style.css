@@ -580,7 +580,7 @@ button {
 
 /*===========FUTURE-SECTION STYLES START============*/
 .feature-content {
-  background: #151C32;
+  background: #151c32;
 }
 .section-skew {
   position: relative;
@@ -638,49 +638,45 @@ button {
 /*===========FUTURE-SECTION STYLES END============*/
 
 /*===========GUIDE-SECTION STYLES START============*/
-.guide-section{
+.guide-section {
   padding: 225px 0;
 }
-.guide-content{
+.guide-content {
   display: flex;
   justify-content: space-around;
-  align-items: center; 
+  align-items: center;
   margin-top: 95px;
-   
 }
-.guide-article{
+.guide-article {
   width: 350px;
 }
-.guide-article .article{
+.guide-article .article {
   width: 100%;
- 
 }
-.guide-article .article:not(:first-child){
- margin-top: 35px;
+.guide-article .article:not(:first-child) {
+  margin-top: 35px;
 }
 
-.guide-img{
-  width: 540px;;
+.guide-img {
+  width: 540px;
   height: 650px;
   object-fit: cover;
   border-radius: 5px;
 }
 
-.guide-article{
+.guide-article {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 /*=============== PAGINATION SWIPER SECTION =================*/
-.pag-section{
-  background: #151C32;
+.pag-section {
+  background: #151c32;
   padding: 125px 0;
-
 }
 .pagination-slider {
   margin-top: 120px;
-  
 }
 .pagination-slider .swiper-slide {
   display: flex;
@@ -697,7 +693,6 @@ button {
   font-size: 16px;
   line-height: 1.25;
   color: #7e8085;
-  
 }
 .slide-text span {
   font-size: 21px;
@@ -707,9 +702,8 @@ button {
   margin: 40px 0 10px 0;
   color: #fff;
 }
-.slide-text img{
+.slide-text img {
   margin-top: 20px;
-  
 }
 
 .pag-img {
@@ -719,14 +713,12 @@ button {
   object-fit: cover;
   margin-left: 50px;
   position: relative;
-  
 }
 .pagination-img {
- display: flex;
- justify-content: center;
+  display: flex;
+  justify-content: center;
 
-
- /* position: absolute;
+  /* position: absolute;
  top: 0; */
 }
 .pagination-img .swiper-pagination-bullet {
@@ -738,4 +730,60 @@ button {
 }
 .pagination-img .swiper-pagination-bullet:not(:first-child) {
   margin-left: 15px;
+}
+
+/*============ PAGINATION SWIPER SECTION END =============*/
+
+.check-section {
+  background: var(--color);
+  padding-bottom: 158px;
+}
+
+.check-section .lighter-color {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.89;
+  width: 556px;
+  margin-top: 20px;
+}
+
+.check-mail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+  width: 100%;
+
+}
+
+.check-mail input{
+  padding: 25px;
+  width: 30%;
+  background: #fff;
+  color: #01081f;
+  border-radius: 5px 0 0 5px;
+}
+::placeholder{
+  color: #67696d;
+}
+.check-mail .btn-check{
+  margin: initial;
+  padding: 25px 45px;
+  border-radius: 0 5px 5px 0;
+  border-left: 1px solid #E7EAEE;
+  text-transform: uppercase;
+
+}
+
+
+.check-mail .btn-check:hover{
+  background: #fff;
+  color: var(--color);
+}
+
+.check-section h3{
+  text-align: center;
+  font-size: 18px;
+  margin-top: 15px;
+  color: #c9cdd5;
 }
