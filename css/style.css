@@ -792,8 +792,8 @@ button {
 /*============ CHECK-SECTION END =============*/
 
 
-.footer{
-  padding: 125px 100px;
+.footer-wrapp{
+  padding: 115px 100px;
   position: relative;
 
 }
@@ -839,4 +839,40 @@ font-weight: 700;
 .bottom-footer{
   background: #151C32;
   padding: 21px 0 0 28px;
+}
+
+.bottom-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-menu-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-menu-list>li+li{
+  margin-left: 20px;
+}
+.bottom-menu-list a{
+  padding: 10px;
+}
+
+.social-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.menu-language{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.languge-list{
+  align-items: center;
+}
+.social-list{
+  display: flex;
+  align-items: center;
 }
