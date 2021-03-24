@@ -188,7 +188,7 @@ body {
   font-size: 16px;
   line-height: 1.75;
   font-family: "Aileron", sans-serif;
-  padding-bottom: 1000px; /*development*/
+  
 }
 picture {
   display: inline-block;
@@ -670,7 +670,9 @@ button {
   align-items: center;
 }
 
-/*=============== PAGINATION SWIPER SECTION =================*/
+/*===========GUIDE-SECTION STYLES END============*/
+
+/*=============== PAGINATION SWIPER SECTION ===============*/
 .pag-section {
   background: #151c32;
   padding: 125px 0;
@@ -734,6 +736,8 @@ button {
 
 /*============ PAGINATION SWIPER SECTION END =============*/
 
+/* =============CHECK-SECTION START=============== */
+
 .check-section {
   background: var(--color);
   padding-bottom: 158px;
@@ -787,6 +791,8 @@ button {
 
 /*============ CHECK-SECTION END =============*/
 
+/* =============FOOTER STYLES START=============== */
+
 .footer-wrapp {
   padding: 125px 100px;
   position: relative;
@@ -828,6 +834,10 @@ button {
 .footer-list a {
   padding: 5px 10px 5px 0;
 }
+
+/* =============FOOTER STYLES END=============== */
+
+/* =============BOTTOM-FOOTER STYLES START=============== */
 
 .bottom-footer {
   background: #151c32;
@@ -875,7 +885,7 @@ button {
   /* left: 0;
   bottom: 0; */
   transform-origin: 100% 100%;
-  /* transform: rotateX(90deg); */
+  transform: rotateX(90deg);
   transition: 0.3s;
  
 }
@@ -909,3 +919,6 @@ button {
 .social-list li + li {
   margin-left: 7px;
 }
+
+
+/* =============BOTTOM-FOOTER STYLES END=============== */
