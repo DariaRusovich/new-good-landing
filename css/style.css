@@ -216,9 +216,7 @@ button {
 .link::after {
   content: "";
   position: absolute;
-  /* left: 0; */
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   bottom: 0;
   height: 1px;
   width: 0;
