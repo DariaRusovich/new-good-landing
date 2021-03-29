@@ -872,25 +872,26 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .lang-list {
-  align-items: center;
-  position: relative;
+  align-items: center;  
 }
 
 .drop-bottom-menu{
   position: absolute;
-  /* left: 0;
-  bottom: 0; */
+  left: 50%;
+  bottom: 100%;
   transform-origin: 100% 100%;
   transform: rotateX(90deg);
   transition: 0.3s;
  
 }
-.lang-list li:hover > .drop-bottom-menu,
-.lang-list li:focus-within > .drop-bottom-menu {
+.menu-lang:hover > .drop-bottom-menu,
+.menu-lang:focus-within > .drop-bottom-menu {
   transform: rotate(0);
 }
+
 .menu-lang img {
   margin-right: 14px;
 }
