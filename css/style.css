@@ -706,10 +706,17 @@ button {
 .slide-text img {
   margin-top: 20px;
 }
-
+.logo-client{
+  width: 105px;
+  height: 35px;
+}
+.picture-client{
+  width: 446px;
+  height: 528px;
+}
 .pag-img {
-  width: 400px;
-  height: 450px;
+  width: 100%;
+  height: auto;
   border-radius: 5px;
   object-fit: cover;
   margin-left: 50px;
