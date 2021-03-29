@@ -250,6 +250,7 @@ button {
 }
 .logo {
   margin-right: 10px;
+  font-size: 30px;
 }
 .header-logo a {
   align-items: center;
@@ -744,7 +745,9 @@ button {
 /* =============CHECK-SECTION START=============== */
 
 .check-section {
-  background: var(--color);
+  background: var(--color) url(../img/Group2.png) 
+  no-repeat 50% 100%
+  / cover;
   padding-bottom: 158px;
 }
 
@@ -797,18 +800,12 @@ button {
 /*============ CHECK-SECTION END =============*/
 
 /* =============FOOTER STYLES START=============== */
-
+.footer{
+  background: url(../img/shape-logo.svg) no-repeat 0% 50% / contain;
+}
 .footer-wrapp {
   padding: 125px 100px;
   position: relative;
-}
-.logo-shape {
-  position: absolute;
-  top: -10%;
-  left: -10%;
-  width: 680px;
-  height: 600px;
-  z-index: -1;
 }
 
 .footer-nav {
