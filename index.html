@@ -39,39 +39,58 @@
             >
           </div>
           <nav class="nav">
-            <ul class="menu">
-              <li><a class="link" href="#">Features</a></li>
-              <li><a class="link" href="#"> Pricing</a></li>
-              <li class="drop">
-                <a class="link" href="#"
-                  >Pages
-                  <i class="icon-chevron-down"></i>
-                </a>
+           
+              <ul class="menu">
+                <li><a class="link" href="#">Features</a></li>
+                <li><a class="link" href="#"> Pricing</a></li>
+                <li class="drop">
+                  <a class="link" href="#"
+                    >Pages
+                    <i class="icon-chevron-down"></i>
+                  </a>
+  
+                  <ul class="drop-menu">
+                    <li><a class="link" href="#">About Us</a></li>
+                    <li><a class="link" href="#">Careers</a></li>
+                    <li><a class="link" href="#">Guidelines</a></li>
+                  </ul>
+                </li>
+              </ul>
+           
+            <!-- =============BURGER-MENU START============-->
 
-                <ul class="drop-menu">
-                  <li><a class="link" href="#">About Us</a></li>
-                  <li><a class="link" href="#">Careers</a></li>
-                  <li><a class="link" href="#">Guidelines</a></li>
-                </ul>
-              </li>
-            </ul>
-          <!-- =============BURGER-MENU START============-->
+            <button class="burger-btn" id="burgerBtn">
+              <img
+                class="open burger-img"
+                width="40"
+                height="40"
+                loading="lazy"
+                src="./img/burger.svg"
+                alt="Menu"
+              />
+              <img
+                class="close burger-img"
+                width="30"
+                height="30"
+                loading="lazy"
+                src="./img/times.svg"
+                alt="Menu"
+              />
+            </button>
 
-            <div class="burger-menu">
-              <button class="burger-btn">
-                <img
-                class="burger-img"
-                width="50"
-                height="50"
-                loading="lazy" 
-                src="./img/burger.svg" 
-                alt="Menu">
-              </button>
-               
-            </div> 
+            <script>
+              burgerBtn.onclick = () => {
+                document.body.classList.toggle("burger-open");
+              };
+              menu.onclick = (event) => {
+                if (event.target.closest("a")) {
+                  document.body.classList.toggle("burger-open");
+                }
+              };
+            </script>
 
-          <!-- =============BURGER-MENU END============-->
-            
+            <!-- =============BURGER-MENU END============-->
+
             <button class="menu-btn">Get started now</button>
           </nav>
         </div>
@@ -413,9 +432,9 @@
                     Creative Director
                   </h4>
                   <img
-                  width="1"
-                  height="1"
-                  loading="lazy"
+                    width="1"
+                    height="1"
+                    loading="lazy"
                     class="logo-client"
                     src="./img/logo-client.svg"
                     alt="AirBNB logo"
@@ -449,9 +468,9 @@
                     Creative Director
                   </h4>
                   <img
-                  width="1"
-                  height="1"
-                  loading="lazy"
+                    width="1"
+                    height="1"
+                    loading="lazy"
                     class="logo-client"
                     src="./img/logo-client.svg"
                     alt="AirBNB logo"
@@ -485,9 +504,9 @@
                     Creative Director
                   </h4>
                   <img
-                  width="1"
-                  height="1"
-                  loading="lazy"
+                    width="1"
+                    height="1"
+                    loading="lazy"
                     class="logo-client"
                     src="./img/logo-client.svg"
                     alt="AirBNB logo"
@@ -610,7 +629,6 @@
                 <ul class="drop-bottom-menu">
                   <li><a class="link" href="#">Russian</a></li>
                   <li><a class="link" href="#">Español</a></li>
-                  
                 </ul>
               </div>
               <div class="footer-social">
