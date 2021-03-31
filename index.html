@@ -39,24 +39,23 @@
             >
           </div>
           <nav class="nav">
-           
-              <ul class="menu">
-                <li><a class="link" href="#">Features</a></li>
-                <li><a class="link" href="#"> Pricing</a></li>
-                <li class="drop">
-                  <a class="link" href="#"
-                    >Pages
-                    <i class="icon-chevron-down"></i>
-                  </a>
-  
-                  <ul class="drop-menu">
-                    <li><a class="link" href="#">About Us</a></li>
-                    <li><a class="link" href="#">Careers</a></li>
-                    <li><a class="link" href="#">Guidelines</a></li>
-                  </ul>
-                </li>
-              </ul>
-           
+            <ul class="menu">
+              <li><a class="link" href="#">Features</a></li>
+              <li><a class="link" href="#"> Pricing</a></li>
+              <li class="drop">
+                <a class="link" href="#"
+                  >Pages
+                  <i class="icon-chevron-down"></i>
+                </a>
+
+                <ul class="drop-menu">
+                  <li><a class="link" href="#">About Us</a></li>
+                  <li><a class="link" href="#">Careers</a></li>
+                  <li><a class="link" href="#">Guidelines</a></li>
+                </ul>
+              </li>
+            </ul>
+
             <!-- =============BURGER-MENU START============-->
 
             <button class="burger-btn" id="burgerBtn">
@@ -256,17 +255,64 @@
                   <i class="fas fa-play"></i>
                 </div>
               </div>
-              <!-- Slider main container -->
-              <div class="swiper-container test-slider">
-                <!-- Additional required wrapper -->
+
+
+              <div class="swiper-container gallery-thumbs">
                 <div class="swiper-wrapper">
-                  <!-- Slides -->
+                  <div class="swiper-slide">Productivity</div>
+                  <div class="swiper-slide">Manangement</div>
+                  <div class="swiper-slide">Time tracking</div>
+                  <div class="swiper-slide">Payment</div>
+                  
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+              </div>
+              <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <p> Silent sir say desire fat him letter. Whatever settling
+                      goodness too and honoured she building answered her.
+                      Strongly thoughts remember mr to do consider.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p> Silent sir say desire fat him letter. Whatever settling
+                      goodness too and honoured she building answered her.
+                      Strongly thoughts remember mr to do consider.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p> Silent sir say desire fat him letter. Whatever settling
+                      goodness too and honoured she building answered her.
+                      Strongly thoughts remember mr to do consider.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p> Silent sir say desire fat him letter. Whatever settling
+                      goodness too and honoured she building answered her.
+                      Strongly thoughts remember mr to do consider.</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <!-- Slider main container
+              <div class="swiper-container test-slider">
+
+                Additional required wrapper
+                <div class="swiper-wrapper">
+                  Slides
+
                   <div class="swiper-slide">Productivity</div>
                   <div class="swiper-slide">Manangement</div>
                   <div class="swiper-slide">Time tracking</div>
                   <div class="swiper-slide">Payment</div>
                 </div>
-              </div>
+              </div> -->
+
+
+
             </div>
           </div>
         </div>
@@ -665,12 +711,47 @@
         href="https://unpkg.com/swiper/swiper-bundle.min.css"
       />
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
       <script>
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs
+      }
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <script>
         const testSlider = new Swiper(".test-slider", {
           slidesPerView: 3,
           spaceBetween: 10,
         });
-      </script>
+      </script> -->
 
       <!-- PAGINATION SWIPER SECTION -->
 
@@ -702,5 +783,26 @@
         };
       </script>
     </div>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
   </body>
 </html>
