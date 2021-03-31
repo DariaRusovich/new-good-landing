@@ -261,6 +261,7 @@ button {
   align-items: center;
   font-size: 17px;
 }
+
 .menu > li + li {
   margin-left: 30px;
 }
@@ -1092,7 +1093,6 @@ button {
     max-width: 540px;
   }
 
-
   .menu {
     position: fixed;
     left: 50%;
@@ -1170,6 +1170,7 @@ button {
   }
   .video {
     width: 100%;
+    height: 100%;
   }
   .arrow {
     font-size: 16px;
@@ -1234,4 +1235,59 @@ align-items: flex-start;
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+.container{
+  padding: 30px 10px 0 10px;
 }
+.header-logo a {
+  font-size: 18px;
+}
+.nav .menu-btn {
+  order: 1; 
+  margin-top: 20px;
+}
+.nav, .menu {
+  flex-wrap: wrap;
+}
+.nav, .menu {
+  flex-direction: column;
+}
+.burger-btn {
+  margin-left: initial;
+  align-self: flex-end;
+}
+
+.hero {
+  padding: 200px 0 50px 0;
+}
+.hero-offer h1 {
+  font-size: 24px;
+  width: 100%;
+}
+.hero-offer p {
+  width: 100%;
+  font-size: 16px;
+}
+.hero-btns{
+  flex-direction: column;
+}
+
+.hero-btns > button + button {
+  margin: 20px 0 0 0;
+}
+.section-main-title {
+  font-size: 18px;
+  width: 100%;
+}
+.article-secondary-title {
+  margin-left: 10px;
+}
+.section {
+  padding: initial;
+}
+.video-play-btn { 
+  width: 54px;
+  height: 54px;
+  font-size: 20px;
+}
+}
+
