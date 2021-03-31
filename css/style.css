@@ -139,6 +139,7 @@ section {
 }
 body {
   line-height: 1;
+  padding-bottom: 500px;
 }
 ol,
 ul {
@@ -813,7 +814,7 @@ button {
   background: url(../img/shape-logo.svg) no-repeat 0% 50% / contain;
 }
 .footer-wrapp {
-  padding: 125px 100px;
+  padding: 125px 0;
   position: relative;
 }
 
@@ -1282,12 +1283,82 @@ align-items: flex-start;
   margin-left: 10px;
 }
 .section {
-  padding: initial;
+  padding: 0 0 50px 0;
 }
 .video-play-btn { 
   width: 54px;
   height: 54px;
   font-size: 20px;
+}
+.article-title {
+  font-size: 16px;
+}
+.section-main-title {
+  width: 100%;
+}
+.article-title-text > p {
+  width: 100%;
+}
+.card {
+  padding: 25px 15px;
+}
+.title-wrapp {
+  margin-top: 40px;
+}
+.slide-text p {
+  font-size: 14px;
+  width: 100%;
+}
+.slide-text span {
+  margin: 20px 0 10px 0;
+}
+.pag-img {
+  margin-top: 20px;
+}
+.check-section .lighter-color {
+  width: 100%;
+}
+.check-mail {
+  flex-direction: column;
+  
+}
+.check-mail input {
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+}
+.check-mail .btn-check {
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+  width: 50%;
+}
+.footer-wrapp {
+  padding: 50px 0;
+}
+.logo-footer{
+  margin-top: 20px;
+}
+.footer-menu:not(:first-child){
+  margin-left: initial;
+  
+}
+.footer-nav {
+  flex-wrap: wrap;
+}
+.footer-nav .footer-menu {
+  margin-top: 20px;
+}
+.bottom-menu-list {
+  flex-direction: row;
+  margin-top: 20px;
+}
+.bottom-wrapper {
+  flex-wrap: wrap;
+}
+
+.social-wrapper {
+  order: -1;
 }
 }
 
