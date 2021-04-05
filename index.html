@@ -1,808 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script async src="./js/modernizr-webp.js"></script>
-    <link rel="preload" href="./css/style.css" as="style" />
+    <!-- Required meta tags -->
     <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.2/css/solid.css"
-      integrity="sha384-6qO6EOFIDfvv6uzAzozX/BvMu/qkIIHxWYOVMjpVjX+NtPuNyd3YiOEflKIIV2ka"
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
       crossorigin="anonymous"
     />
+    <link rel="preload" href="./css/styles.css" as="style" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.2/css/brands.css"
-      integrity="sha384-RTi1U6SIW2G3kUi5NslKQjA34F8CsQCVduJO50jqtxhR2KY++LR7KZS2886EwXrk"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.2/css/fontawesome.css"
-      integrity="sha384-Hx1dya9ptAdKu2hLNR5C2Cwgm+wCfwD0VMGE6jk5OUxxa9I58YfxOCwEtRog+3wk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/icons.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New good landing</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Really nice landing</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="container header-nav">
-          <div class="header-logo">
-            <a href="index.html">
-              <i class="icon-logo logo"></i>
-              xPider</a
-            >
-          </div>
-          <nav class="nav">
-            <ul class="menu">
-              <li><a class="link" href="#">Features</a></li>
-              <li><a class="link" href="#"> Pricing</a></li>
-              <li class="drop">
-                <a class="link" href="#"
-                  >Pages
-                  <i class="icon-chevron-down"></i>
-                </a>
-
-                <ul class="drop-menu">
-                  <li><a class="link" href="#">About Us</a></li>
-                  <li><a class="link" href="#">Careers</a></li>
-                  <li><a class="link" href="#">Guidelines</a></li>
-                </ul>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-md">
+          <a class="logo" href="#">
+            <img
+              width="2"
+              height="1"
+              loading="lazy"
+              class="logo-img"
+              src="./img/logo.svg"
+              alt="Logo"
+            />
+          </a>
+          <button
+            class="btn-menu"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Navigation"
+          >
+            <span class="burger-img" aria-label="Button navigatiob"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="icon-search ms-auto" href="#">
+              <img
+                class="nav-icons"
+                width="1"
+                height="1"
+                loading="lazy"
+                src="./img/search-alt.svg"
+                alt="Search"
+              />
+            </a>
+            <a class="icon-call ms-3" href="tel:+40 729 131 637">
+              <img
+                class="nav-icons me-2"
+                width="1"
+                height="1"
+                loading="lazy"
+                src="./img/mobile-vibration.svg"
+                alt="Call us"
+              />
+              Call us
+            </a>
+            <ul class="navbar-nav mb-2 mb-lg-0 me-3">
+              <li class="nav-item">
+                <a class="nav-link nav-link-my" aria-current="page" href="#"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-my" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-my" href="#"> FAQ </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-my" href="#">Contact</a>
               </li>
             </ul>
+            <button class="btn btn-style btn-primary-col me-3">Download</button>
+            <button class="btn btn-style btn-secondary-col">Sign up</button>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-            <!-- =============BURGER-MENU START============-->
-
-            <button class="burger-btn" id="burgerBtn">
-              <img
-                class="open burger-img"
-                width="40"
-                height="40"
-                loading="lazy"
-                src="./img/burger.svg"
-                alt="Menu"
-              />
-              <img
-                class="close burger-img"
-                width="30"
-                height="30"
-                loading="lazy"
-                src="./img/times.svg"
-                alt="Menu"
-              />
-            </button>
-
-            <script>
-              burgerBtn.onclick = () => {
-                document.body.classList.toggle("burger-open");
-              };
-              menu.onclick = (event) => {
-                if (event.target.closest("a")) {
-                  document.body.classList.toggle("burger-open");
-                }
-              };
-            </script>
-
-            <!-- =============BURGER-MENU END============-->
-
-            <button class="menu-btn">Get started now</button>
-          </nav>
-        </div>
-      </header>
-      <div class="hero">
-        <div class="container hero-offer">
-          <h1>xPider is coming to make your successful with business.</h1>
-          <p>
-            When you need a kickstart in your business and you have no time for
-            coding for your website, xPider will take that job for you and will
-            build a great looking website in minutes.
-          </p>
-          <div class="hero-btns">
-            <button class="btn">
-              <i class="icon-target"></i>
-              <span> Get started </span>
-            </button>
-            <button class="btn">
-              <i class="icon-bill"></i>
-              <span> Check price </span>
-            </button>
-            <button class="btn">
-              <i class="icon-circle-play"></i>
-              <span> Watch Video </span>
-            </button>
+    <section class="hero pt-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <picture class="col-12 order-1 mt-5">
+            <source srcset="img/promo-image.webp" type="image/webp" />
+            <source srcset="img/promo-image.png" type="image/png" />
+            <img
+              src="./img/promo-image.png"
+              class="hero-img"
+              alt="Themes"
+              width="1"
+              height="1"
+              loading="lazy"
+            />
+          </picture>
+          <div class="col-12">
+            <h1 class="fw-bold lh-1 mb-3 title">
+              At vero eos et accusamus et iusto odio dignissimos ducimus
+            </h1>
+            <p class="lh-base main-text">
+              Nam libero tempore, cum soluta nobis est eligendi optio, cumque
+              nihil impedit, quo minus id, quod maxime placeat, facere possimus,
+              omnis voluptas assumenda est, omnis dolor repellendus. Temporibus
+              autem quibusdam et aut officiis debitis aut rerum necessitatibus
+              saepe eveniet, ut et voluptates repudiandae sint et molestiae non
+              recusandae.
+            </p>
+            <div class="d-grid gap-2">
+              <button
+                type="button"
+                class="btn btn-primary-col btn-style btn-lg mt-4"
+              >
+                Try for free
+              </button>
+            </div>
           </div>
         </div>
       </div>
-      <section class="section">
-        <div class="container">
-          <div class="title-wrapp">
-            <h2 class="section-title darker-color">Why choose xPider?<br /></h2>
-            <h3 class="section-title section-main-title">
-              A simple, proven way to boost your team performance.
-            </h3>
-          </div>
-          <div class="section-articles">
-            <article class="article">
-              <div class="article-title">
-                <img
-                  class="icon-article"
-                  width="1"
-                  height="1"
-                  loading="lazy"
-                  src="./img/family.svg"
-                  alt="Family"
-                />
-                <h4 class="article-secondary-title">One Platform</h4>
-              </div>
-              <p class="text">
-                <span>No more Mulitple Platforms.</span> Now it had seen unable
-                uneasy. Drawings can followed by improved out sociable not.
-                Earnestly so do instantly pretended.
-              </p>
-            </article>
-            <article class="article">
-              <div class="article-title">
-                <img
-                  class="icon-article"
-                  width="1"
-                  height="1"
-                  loading="lazy"
-                  src="./img/b-meeting.svg"
-                  alt="Family"
-                />
-                <h4 class="article-secondary-title">Communication</h4>
-              </div>
-              <p class="text">
-                <span>No more hassle in communication.</span> New had happen
-                unable uneasy. Drawings can followed improved out sociable not.
-                Earnestly so do instantly pretended.
-              </p>
-            </article>
-            <article class="article">
-              <div class="article-title">
-                <img
-                  class="icon-article"
-                  width="1"
-                  height="1"
-                  loading="lazy"
-                  src="./img/filter-organization.svg"
-                  alt="Family"
-                />
-                <h4 class="article-secondary-title">Project Management</h4>
-              </div>
-              <p class="text">
-                <span>Easily manage your projects.</span> Drawings can followed
-                improved out sociable not. Earnestly so do instantly pretended.
-                See general few civilly amiable pleased account carried.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section class="section section-manage">
-        <div class="container manage-container">
-          <div class="article-title-text">
-            <h2 class="section-title article-about darker-color">
-              Manage your team<br />
-            </h2>
-            <h3 class="section-main-title">
-              xPider helps you to manage your team remotely!
-            </h3>
-            <p class="text">
-              Silent sir say desire fat him letter. Whatever settling goodness
-              too and honoured she building answered her. Strongly thoughts
-              remember mr to do consider debating. Spirits musical behaved on we
-              he farther letters.
-            </p>
-            <a href="#" class="arrow link" target="_blank">
-              Find out more
-              <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
-          <div class="video-wrap">
-            <button class="video-play-btn" id="playBtn">
-              <i class="fas fa-play"></i>
-            </button>
-            <video
-              id="video"
-              src="video/1.mp4"
-              class="video"
-              poster="img/video-poster.jpg"
-            ></video>
-          </div>
-        </div>
-      </section>
-      <section class="section ap-section">
-        <div class="container">
-          <div class="article-ap">
-            <div class="article-light">
-              <h2 class="section-title lighter-color">
-                Everything on mobile<br />
-                <h3 class="section-main-title ap-title">
-                  Use your android or ios device to manage everything.
-                </h3>
-              </h2>
-              <p class="text lighter-color">
-                Silent sir say desire fat him letter. Whatever settling goodness
-                too and honoured she building answered her. Strongly thoughts
-                remember mr to do consider.
-              </p>
-            </div>
-
-            <picture class="picture">
-              <source srcset="img/mobile.webp" type="image/webp" />
-              <source srcset="img/mobile.png" type="image/png" />
-              <img
-                width="1"
-                height="1"
-                loading="lazy"
-                class="article-img"
-                src="img/mobile.png"
-                alt="Mobile interfase"
-              />
-            </picture>
-            <div class="sliders-wrap">
-              <div class="test-slider-arrows">
-                <div class="test-slider-arrow test-slider-prev">
-                  <i class="fas fa-play"></i>
-                </div>
-                <div class="test-slider-arrow test-slider-next">
-                  <i class="fas fa-play"></i>
-                </div>
-              </div>
-
-
-              <div class="swiper-container gallery-thumbs">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">Productivity</div>
-                  <div class="swiper-slide">Manangement</div>
-                  <div class="swiper-slide">Time tracking</div>
-                  <div class="swiper-slide">Payment</div>
-                  
-                </div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next swiper-button-white"></div>
-                <div class="swiper-button-prev swiper-button-white"></div>
-              </div>
-              <div class="swiper-container gallery-top">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <p> Silent sir say desire fat him letter. Whatever settling
-                      goodness too and honoured she building answered her.
-                      Strongly thoughts remember mr to do consider.</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <p> Silent sir say desire fat him letter. Whatever settling
-                      goodness too and honoured she building answered her.
-                      Strongly thoughts remember mr to do consider.</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <p> Silent sir say desire fat him letter. Whatever settling
-                      goodness too and honoured she building answered her.
-                      Strongly thoughts remember mr to do consider.</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <p> Silent sir say desire fat him letter. Whatever settling
-                      goodness too and honoured she building answered her.
-                      Strongly thoughts remember mr to do consider.</p>
-                  </div>
-                </div>
-              </div>
-
-
-
-
-              <!-- Slider main container
-              <div class="swiper-container test-slider">
-
-                Additional required wrapper
-                <div class="swiper-wrapper">
-                  Slides
-
-                  <div class="swiper-slide">Productivity</div>
-                  <div class="swiper-slide">Manangement</div>
-                  <div class="swiper-slide">Time tracking</div>
-                  <div class="swiper-slide">Payment</div>
-                </div>
-              </div> -->
-
-
-
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section feature-content">
-        <div class="container">
-          <div class="section-skew">
-            <div class="title-wrapp">
-              <h2 class="section-title darker-color">
-                xPider makes your life easy<br />
-              </h2>
-              <h3 class="section-main-title">
-                Make your life easy, get a better way to communicate.
-              </h3>
-            </div>
-            <div class="feature-cards">
-              <div class="card">
-                <div class="icon-back">
-                  <img
-                    class="card-icon"
-                    width="1"
-                    height="1"
-                    loading="lazy"
-                    src="./img/grid-solves.svg"
-                    alt="Phone"
-                  />
-                </div>
-                <h4 class="card-title article-title">
-                  One Platform <br />
-                  <span>Solves Everything</span>
-                </h4>
-                <p>
-                  Now it had seen unable uneasy. Drawings can followed by
-                  improved out sociable not. Earnestly so do instantly
-                  pretended.
-                </p>
-                <a href="#" class="arrow link" target="_blank">
-                  Get xPider Now
-                  <i class="fas fa-arrow-right"></i>
-                </a>
-              </div>
-              <div class="card">
-                <div class="icon-back">
-                  <img
-                    class="card-icon"
-                    width="1"
-                    height="1"
-                    loading="lazy"
-                    src="./img/grid-organize.svg"
-                    alt="Phone"
-                  />
-                </div>
-                <h4 class="card-title article-title">
-                  Fastest Management,
-                  <br />
-                  <span>Easy to Organize</span>
-                </h4>
-                <p>
-                  Now it had seen unable uneasy. Drawings can followed by
-                  improved out sociable not. Earnestly so do instantly
-                  pretended.
-                </p>
-                <a href="#" class="arrow link" target="_blank">
-                  Find out more
-                  <i class="fas fa-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- GUIDE-SECTION STYLES START -->
-
-      <section class="section guide-section">
-        <div class="container">
-          <div class="title-wrapp">
-            <h2 class="section-title darker-color">
-              More than a software<br />
-            </h2>
-            <h3 class="section-main-title">
-              The proper guide that helps you to unlock the real potential.
-            </h3>
-          </div>
-          <div class="guide-content">
-            <picture class="picture picture-guide">
-              <source srcset="img/team.webp" type="image/webp" />
-              <source srcset="img/team.jpg" type="image/jpeg" />
-              <img
-                width="1"
-                height="1"
-                loading="lazy"
-                class="guide-img"
-                src="img/team.jpg"
-                alt="Our team"
-              />
-            </picture>
-            <div class="guide-article">
-              <article class="article">
-                <div class="article-title">
-                  <i class="icon-book-open"></i>
-                  <h4 class="article-secondary-title">Installation Guide</h4>
-                </div>
-                <p class="text">
-                  No more Mulitple Platforms. Now it had seen unable uneasy.
-                  Drawings can followed by improved out sociable not. Earnestly
-                  so do instantly pretended.
-                </p>
-              </article>
-              <article class="article">
-                <div class="article-title">
-                  <i class="icon-phone"></i>
-                  <h4 class="article-secondary-title">Live call support</h4>
-                </div>
-                <p class="text">
-                  No more Mulitple Platforms. Now it had seen unable uneasy.
-                  Drawings can followed by improved out sociable not. Earnestly
-                  so do instantly pretended.
-                </p>
-              </article>
-              <article class="article">
-                <div class="article-title">
-                  <i class="icon-pref-circle"></i>
-                  <h4 class="article-secondary-title">Easy setup process</h4>
-                </div>
-                <p class="text">
-                  No more Mulitple Platforms. Now it had seen unable uneasy.
-                  Drawings can followed by improved out sociable not. Earnestly
-                  so do instantly pretended.
-                </p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PAGINATION SWIPER SECTION -->
-
-      <section class="section pag-section guide-section">
-        <div class="container">
-          <div class="title-wrapp">
-            <h2 class="section-title darker-color">
-              5,000+ Teams trust xPider<br />
-            </h2>
-            <h3 class="section-main-title">
-              People love xPider. See some of the stories.
-            </h3>
-          </div>
-
-          <div class="swiper-container pagination-slider">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <div class="slide-text">
-                  <p>
-                    “Life before xPider was very chaotic — we got a lot of phone
-                    calls, a lot of mistyped orders. So with Company, the
-                    ability to see the order directly from the customer makes it
-                    so streamlined.”
-                  </p>
-                  <h4>
-                    <span>Frank Hardy</span> <br />
-                    Creative Director
-                  </h4>
-                  <img
-                    width="1"
-                    height="1"
-                    loading="lazy"
-                    class="logo-client"
-                    src="./img/logo-client.svg"
-                    alt="AirBNB logo"
-                  />
-                </div>
-                <picture class="picture picture-client">
-                  <source srcset="img/img-client.webp" type="image/webp" />
-                  <source srcset="img/img-client.jpg" type="image/jpeg" />
-                  <img
-                    width="1"
-                    height="1"
-                    loading="lazy"
-                    class="client-img pag-img swiper-lazy"
-                    src="img/img-client.jpg"
-                    alt="Our team"
-                  />
-                </picture>
-                <div class="swiper-lazy-preloader"></div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="slide-text">
-                  <p>
-                    “Life before xPider was very chaotic — we got a lot of phone
-                    calls, a lot of mistyped orders. So with Company, the
-                    ability to see the order directly from the customer makes it
-                    so streamlined.”
-                  </p>
-                  <h4>
-                    <span>Frank Hardy</span> <br />
-                    Creative Director
-                  </h4>
-                  <img
-                    width="1"
-                    height="1"
-                    loading="lazy"
-                    class="logo-client"
-                    src="./img/logo-client.svg"
-                    alt="AirBNB logo"
-                  />
-                </div>
-                <picture class="picture picture-client">
-                  <source srcset="img/img-client.webp" type="image/webp" />
-                  <source srcset="img/img-client.jpg" type="image/jpeg" />
-                  <img
-                    width="1"
-                    height="1"
-                    loading="lazy"
-                    class="client-img pag-img swiper-lazy"
-                    src="img/img-client.jpg"
-                    alt="Our team"
-                  />
-                </picture>
-                <div class="swiper-lazy-preloader"></div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="slide-text">
-                  <p>
-                    “Life before xPider was very chaotic — we got a lot of phone
-                    calls, a lot of mistyped orders. So with Company, the
-                    ability to see the order directly from the customer makes it
-                    so streamlined.”
-                  </p>
-                  <h4>
-                    <span>Frank Hardy</span> <br />
-                    Creative Director
-                  </h4>
-                  <img
-                    width="1"
-                    height="1"
-                    loading="lazy"
-                    class="logo-client"
-                    src="./img/logo-client.svg"
-                    alt="AirBNB logo"
-                  />
-                </div>
-                <picture class="picture picture-client">
-                  <source srcset="img/img-client.webp" type="image/webp" />
-                  <source srcset="img/img-client.jpg" type="image/jpeg" />
-                  <img
-                    width="1"
-                    height="1"
-                    loading="lazy"
-                    class="client-img pag-img swiper-lazy"
-                    src="img/img-client.jpg"
-                    alt="Our team"
-                  />
-                </picture>
-                <div class="swiper-lazy-preloader"></div>
-              </div>
-            </div>
-          </div>
-          <div class="pagination-img"></div>
-        </div>
-      </section>
-
-      <!-- PAGINATION SWIPER SECTION -->
-
-      <section class="section check-section">
-        <div class="container">
-          <div class="title-wrapp">
-            <h2 class="section-main-title">
-              Try xPider for 14 days, for free!
-            </h2>
-            <p class="lighter-color">
-              Millions of people around the world have already made xPider the
-              place where their works happens.
-            </p>
-          </div>
-          <form name="contactForm" class="check-mail">
-            <input
-              type="email"
-              name="customEmail"
-              placeholder="Enter your email to start"
-              aria-label="Enter your email to start"
-              required
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <picture class="col-12 order-1 mt-5">
+            <source srcset="img/requirements-image.webp" type="image/webp" />
+            <source srcset="img/requirements-image.png" type="image/png" />
+            <img
+              src="./img/requirements-image.png"
+              class="d-block mx-lg-auto img-fluid hero-img"
+              alt="Requirements-image"
+              width="1"
+              height="1"
+              loading="lazy"
             />
-            <button type="submit" class="menu-btn btn-check">
-              Get started
-            </button>
-          </form>
-          <h3>No credit card required.</h3>
-        </div>
-      </section>
-
-      <footer class="footer">
-        <div class="footer-wrapp">
-          <div class="container">
-            <div class="footer-nav">
-              <div class="logo-footer">
-                <a href="index.html">
-                  <i class="icon-logo logo f-logo"></i>
-                </a>
-              </div>
-              <div class="footer-menu">
-                <h2 class="footer-title">Company</h2>
-                <ul class="footer-list">
-                  <li><a class="link" href="#">About Us </a></li>
-                  <li><a class="link" href="#">Careers</a></li>
-                  <li><a class="link" href="#">Blog</a></li>
-                  <li><a class="link" href="#">Press</a></li>
-                  <li><a class="link" href="#">Brand Guidelines</a></li>
-                </ul>
-              </div>
-              <div class="footer-menu">
-                <h2 class="footer-title">Product</h2>
-                <ul class="footer-list">
-                  <li><a class="link" href="#">Why xPider? </a></li>
-                  <li><a class="link" href="#"> Enterprise</a></li>
-                  <li><a class="link" href="#">Customer Stories</a></li>
-                  <li><a class="link" href="#">Pricing</a></li>
-                  <li><a class="link" href="#">Security</a></li>
-                </ul>
-              </div>
-              <div class="footer-menu">
-                <h2 class="footer-title">Resources</h2>
-                <ul class="footer-list">
-                  <li><a class="link" href="#">Download </a></li>
-                  <li><a class="link" href="#">Help Center</a></li>
-                  <li><a class="link" href="#">Guides</a></li>
-                  <li><a class="link" href="#">Partners</a></li>
-                  <li><a class="link" href="#">Events</a></li>
-                </ul>
-              </div>
+          </picture>
+          <div class="col-12">
+            <h2 class="title fw-bold lh-1 mb-3">
+              Temporibus autem quibusdam et aut officiis debitis
+            </h2>
+            <p class="lh-base main-text">
+              In Deutschland, sprich: an verschiedenen Schulen bestehen zum Teil
+              deutliche Unterschiede hinsichtlich den Anforderungen an eine
+              Facharbeit; sie beziehen sich vor allem auf den Umfang, die
+              gewährte Schreibfrist und den Grad an notwendigen Kompetenzen.
+              Zudem können die Erwartungen der einzelnen Dozenten mehr oder
+              weniger weit auseinanderliegen.
+            </p>
+            <div class="d-grid gap-2">
+              <button
+                type="button"
+                class="btn btn-primary-col btn-style col-6 btn-lg"
+              >
+                Try for free
+              </button>
             </div>
           </div>
         </div>
-
-        <div class="bottom-footer">
-          <div class="container bottom-wrapper">
-            <div class="bottom-menu">
-              <ul class="bottom-menu-list">
-                <li><a class="link" href="#">Status</a></li>
-                <li><a class="link" href="#">Privacy & Terms</a></li>
-                <li><a class="link" href="#">Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="social-wrapper">
-              <div class="menu-lang">
-                <img
-                  width="1"
-                  height="1"
-                  loading="lazy"
-                  src="./img/eng.jpg"
-                  alt="Language"
-                />
-                <a class="lang-list link" href="#">
-                  English
-                  <i class="icon-chevron-up"> </i>
-                </a>
-                <ul class="drop-bottom-menu">
-                  <li><a class="link" href="#">Russian</a></li>
-                  <li><a class="link" href="#">Español</a></li>
-                </ul>
+        <!-- <div class="card card-body-my position-absolute top-100 left-0 translate-middle-y" style="width: 18rem">
+          <div class="card-body">
+            <div class="card-wrapp d-flex align-items-center">
+              <div class="img-wrapp">
+                <img class="card-avatar" width="1" height="1" loading="lazy" src="./img/card-icon.svg" alt="Avatar" />
               </div>
-              <div class="footer-social">
-                <ul class="social-list">
-                  <li>
-                    <a href="#" target="_blank" aria-label="Go to Facebook">
-                      <i class="icon-dribbble"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" aria-label="Go to Twitter">
-                      <i class="icon-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" aria-label="Go to Drible">
-                      <i class="icon-dribble"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <h5 class="card-title mb-0 ms-1">Notice</h5>
             </div>
+            <p class="card-text">
+              Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime
+              placeat, facere possimus, omnis voluptas assumenda est.
+            </p>
           </div>
-        </div>
-      </footer>
+        </div> -->
+      </div>
+    </section>
+    <div class="calk">
+      <div class="container">
+        <form class="row calc-card text-center mt-5" id="calkForm">
+          <h2 class="title fw-bold lh-1 mb-3">Calculator</h2>
+          <p class="lh-base main-text">
+            Nam libero tempore, cum soluta nobis est eligendi optio
+          </p>
+          <div class="input-group mb-3">
+            <select class="form-select input-control" id="inputGroupSelect01">
+              <option selected>Color</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
 
-      <link
-        rel="preload"
-        href="https://unpkg.com/swiper/swiper-bundle.min.css"
-        as="style"
-      />
-      <link
-        rel="stylesheet"
-        href="https://unpkg.com/swiper/swiper-bundle.min.css"
-      />
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          <div class="input-group mb-3">
+            <select class="form-select input-control">
+              <option selected>Size</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
 
-      <script>
-    var galleryThumbs = new Swiper('.gallery-thumbs', {
-      spaceBetween: 10,
-      slidesPerView: 3,
-      freeMode: true,
-      watchSlidesVisibility: true,
-      watchSlidesProgress: true,
-    });
-    var galleryTop = new Swiper('.gallery-top', {
-      spaceBetween: 10,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      thumbs: {
-        swiper: galleryThumbs
-      }
-    });
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- <script>
-        const testSlider = new Swiper(".test-slider", {
-          slidesPerView: 3,
-          spaceBetween: 10,
-        });
-      </script> -->
-
-      <!-- PAGINATION SWIPER SECTION -->
-
-      <script>
-        const paginationSlider = new Swiper(".pagination-slider", {
-          slidesPerView: 1,
-          spaceBetween: 55,
-
-          pagination: {
-            el: ".pagination-img",
-            clickable: true,
-          },
-          speed: 800,
-          preloadImages: false,
-          // Enable lazy loading
-          lazy: {
-            loadPrevNext: true,
-          },
-        });
-      </script>
-
-      <!-- PAGINATION SWIPER SECTION -->
-
-      <script>
-        playBtn.onclick = function () {
-          video.controls = true;
-          video.play();
-          this.classList.add("hide");
-        };
-      </script>
+          <div class="input-group mb-3">
+            <button class="btn input-control" type="button">-</button>
+            <input
+              type="text"
+              class="form-control input-control input-range"
+              placeholder="100"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button class="btn input-control" type="button">+</button>
+          </div>
+          <div class="input-group mb-3">
+            <input
+              type="date"
+              class="form-control input-control input-date"
+              aria-label="Date"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          <div class="input-group mb-3">
+            <select class="form-select input-control">
+              <option selected>City</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="input-group mb-3">
+            <select class="form-select input-control">
+              <option selected>Delivery</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <label class="calc-result mb-3 fw-bold" for="callForm">56.25$</label>
+          <button class="btn btn-primary-col btn-style btn-lg">Anfragen</button>
+        </form>
+      </div>
     </div>
 
+    <section class="section-reviews mt-5">
+      <div class="container row">
+        <h2 class="title fw-bold lh-1 mb-3">Reviews</h2>
+        <p class="lh-base main-text">
+          Nam libero tempore, cum soluta nobis est
+        </p>
+        <!-- Slider main container -->
+        <div class="swiper-container reviews-slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide slider-card">
+              Nam libero tempore, cum soluta nobis est eligendi optio, cumque
+              nihil impedit, quo minus id, quod maxime placeat, facere possimus,
+              omnis voluptas assumenda est, omnis dolor repellendus. Temporibus
+              autem quibusdam.
+              <div class="user d-flex align-items-center mt-5">
+                <img class="avatar me-3" 
+                width="24" 
+                height="24" 
+                loading="lazy" 
+                src="./img/user.svg" 
+                alt="Avatar">
+                <span>ID: 21015</span>
+              </div>
+              <p class="mt-2">Category|Subcategory</p>
+            </div>
+            <div class="swiper-slide slider-card">Nam libero tempore, cum soluta nobis est eligendi optio, cumque
+              nihil impedit, quo minus id, quod maxime placeat, facere possimus,
+              omnis voluptas assumenda est, omnis dolor repellendus. Temporibus
+              autem quibusdam.
+              <div class="user d-flex align-items-center mt-5">
+                <img class="avatar me-3" 
+                width="24" 
+                height="24" 
+                loading="lazy" 
+                src="./img/user.svg" 
+                alt="Avatar">
+                <span>ID: 21015</span>
+              </div>
+              <p class="mt-2">Category|Subcategory</p></div>
+            <div class="swiper-slide slider-card">Nam libero tempore, cum soluta nobis est eligendi optio, cumque
+              nihil impedit, quo minus id, quod maxime placeat, facere possimus,
+              omnis voluptas assumenda est, omnis dolor repellendus. Temporibus
+              autem quibusdam.
+              <div class="user d-flex align-items-center mt-5">
+                <img class="avatar me-3" 
+                width="24" 
+                height="24" 
+                loading="lazy" 
+                src="./img/user.svg" 
+                alt="Avatar">
+                <span>ID: 21015</span>
+              </div>
+              <p class="mt-2">Category|Subcategory</p>
+            </div>
+            <div class="swiper-slide slider-card">Nam libero tempore, cum soluta nobis est eligendi optio, cumque
+              nihil impedit, quo minus id, quod maxime placeat, facere possimus,
+              omnis voluptas assumenda est, omnis dolor repellendus. Temporibus
+              autem quibusdam.
+              <div class="user d-flex align-items-center mt-5">
+                <img class="avatar me-3" 
+                width="24" 
+                height="24" 
+                loading="lazy" 
+                src="./img/user.svg" 
+                alt="Avatar">
+                <span>ID: 21015</span>
+              </div>
+              <p class="mt-2">Category|Subcategory</p>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
 
+    <!-- <section class="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              expedita sapiente tempore aliquid voluptates deserunt?
+            </h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+              earum ratione tempore perspiciatis nobis debitis commodi tenetur?
+              Autem asperiores quisquam quam eveniet, beatae nisi magni hic
+              quidem suscipit totam quia?
+            </p>
+            <div
+              class="nav flex-column nav-pills me-3"
+              id="v-pills-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <button
+                class="nav-link active"
+                id="v-pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-home"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-home"
+                aria-selected="true"
+              >
+                Home
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-profile"
+                aria-selected="false"
+              >
+                Profile
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-messages-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-messages"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-messages"
+                aria-selected="false"
+              >
+                Messages
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-settings-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-settings"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-settings"
+                aria-selected="false"
+              >
+                Settings
+              </button>
+            </div>
+          </div>
+          <div class="tab-content col-6" id="v-pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="v-pills-home"
+              role="tabpanel"
+              aria-labelledby="v-pills-home-tab"
+            >
+              1111Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+              unde rem veniam nisi libero, laborum fuga neque repudiandae
+              expedita quo voluptatum nesciunt sit laboriosam sapiente
+              voluptatibus eveniet sunt. Atque quia totam saepe obcaecati odit
+              vero harum distinctio dolorem numquam voluptatem nihil corporis,
+              alias consequatur vel ab veniam cupiditate maxime! Quas ducimus
+              possimus recusandae assumenda natus obcaecati voluptas dolore
+              tenetur tempore autem a officiis repellendus eveniet, odit
+              veritatis, itaque impedit cumque dicta id explicabo accusantium?
+              Quos ea provident eius asperiores accusamus culpa necessitatibus
+              pariatur cumque voluptate aperiam. Ut explicabo excepturi earum.
+              Dolores provident alias nisi perspiciatis incidunt sequi
+              reiciendis autem officia.
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-profile"
+              role="tabpanel"
+              aria-labelledby="v-pills-profile-tab"
+            >
+              2222Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+              unde rem veniam nisi libero, laborum fuga neque repudiandae
+              expedita quo voluptatum nesciunt sit laboriosam sapiente
+              voluptatibus eveniet sunt. Atque quia totam saepe obcaecati odit
+              vero harum distinctio dolorem numquam voluptatem nihil corporis,
+              alias consequatur vel ab veniam cupiditate maxime! Quas ducimus
+              possimus recusandae assumenda natus obcaecati voluptas dolore
+              tenetur tempore autem a officiis repellendus eveniet, odit
+              veritatis, itaque impedit cumque dicta id explicabo accusantium?
+              Quos ea provident eius asperiores accusamus culpa necessitatibus
+              pariatur cumque voluptate aperiam. Ut explicabo excepturi earum.
+              Dolores provident alias nisi perspiciatis incidunt sequi
+              reiciendis autem officia.
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-messages"
+              role="tabpanel"
+              aria-labelledby="v-pills-messages-tab"
+            >
+              3333Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+              unde rem veniam nisi libero, laborum fuga neque repudiandae
+              expedita quo voluptatum nesciunt sit laboriosam sapiente
+              voluptatibus eveniet sunt. Atque quia totam saepe obcaecati odit
+              vero harum distinctio dolorem numquam voluptatem nihil corporis,
+              alias consequatur vel ab veniam cupiditate maxime! Quas ducimus
+              possimus recusandae assumenda natus obcaecati voluptas dolore
+              tenetur tempore autem a officiis repellendus eveniet, odit
+              veritatis, itaque impedit cumque dicta id explicabo accusantium?
+              Quos ea provident eius asperiores accusamus culpa necessitatibus
+              pariatur cumque voluptate aperiam. Ut explicabo excepturi earum.
+              Dolores provident alias nisi perspiciatis incidunt sequi
+              reiciendis autem officia.
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-settings"
+              role="tabpanel"
+              aria-labelledby="v-pills-settings-tab"
+            >
+              4444Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+              unde rem veniam nisi libero, laborum fuga neque repudiandae
+              expedita quo voluptatum nesciunt sit laboriosam sapiente
+              voluptatibus eveniet sunt. Atque quia totam saepe obcaecati odit
+              vero harum distinctio dolorem numquam voluptatem nihil corporis,
+              alias consequatur vel ab veniam cupiditate maxime! Quas ducimus
+              possimus recusandae assumenda natus obcaecati voluptas dolore
+              tenetur tempore autem a officiis repellendus eveniet, odit
+              veritatis, itaque impedit cumque dicta id explicabo accusantium?
+              Quos ea provident eius asperiores accusamus culpa necessitatibus
+              pariatur cumque voluptate aperiam. Ut explicabo excepturi earum.
+              Dolores provident alias nisi perspiciatis incidunt sequi
+              reiciendis autem officia.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
+    <!-- Optional JavaScript; choose one of the two! -->
 
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
 
+    <!-- ============SWIPER============ -->
 
+    <link
+      rel="preload"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  
+    <!-- ============SWIPER============ -->
 
-
-
-
-
-
-
-
-
-
-
-
-
+    <script>
+      var swiper = new Swiper(".reviews-slider", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
