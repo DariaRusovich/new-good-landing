@@ -177,7 +177,7 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --color: #2f5bea;
+  --color: hsl(226, 82%, 63%);
   --text-color: #7e8085;
 }
 
@@ -857,7 +857,7 @@ button {
 
 .bottom-footer {
   background: #151c32;
-  color: #7e8085;
+  color: hsl(223, 3%, 70%);
   font-weight: 700;
   padding: 25px 0;
 }
