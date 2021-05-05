@@ -1338,7 +1338,8 @@ align-items: flex-start;
   padding: 15px;
   border-radius: 5px;
   margin-top: 15px;
-  width: 100%;
+  width: 50%;
+  margin-left: auto;
 }
 .footer-wrapp {
   padding: 50px 0;
@@ -1377,3 +1378,13 @@ align-items: flex-start;
 }
 }
 
+@media (max-width: 400px) {
+  .container{
+    padding: 30px 10px 0 10px;
+  }
+  .check-mail .btn-check {
+    
+    width: 100%;
+    margin-left: initial;
+  }
+}
