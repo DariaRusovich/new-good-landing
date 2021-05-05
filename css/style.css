@@ -1338,7 +1338,7 @@ align-items: flex-start;
   padding: 15px;
   border-radius: 5px;
   margin-top: 15px;
-  width: 50%;
+  width: 100%;
 }
 .footer-wrapp {
   padding: 50px 0;
@@ -1351,7 +1351,8 @@ align-items: flex-start;
   
 }
 .footer-nav {
-  flex-wrap: wrap;
+  display: block;
+  text-align: center;
 }
 .footer-nav .footer-menu {
   margin-top: 20px;
