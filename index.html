@@ -94,9 +94,7 @@
 
             <!-- =============BURGER-MENU END============-->
             <button class="menu-btn">Get started now</button>
-            
           </nav>
-         
         </div>
       </header>
       <div class="hero">
@@ -210,7 +208,11 @@
             </a>
           </div>
           <div class="video-wrap">
-            <button class="video-play-btn" id="playBtn" aria-label="Click to play the video">
+            <button
+              class="video-play-btn"
+              id="playBtn"
+              aria-label="Click to play the video"
+            >
               <i class="fas fa-play"></i>
             </button>
             <video
@@ -251,74 +253,63 @@
                 alt="Mobile interfase"
               />
             </picture>
-            <!-- <div class="sliders-wrap">
-              <div class="test-slider-arrows">
-                <div class="test-slider-arrow test-slider-prev">
-                  <i class="fas fa-play"></i>
-                </div>
-                <div class="test-slider-arrow test-slider-next">
-                  <i class="fas fa-play"></i>
-                </div>
+           <div class="swiper-wrap">
+            <div
+            
+            class="swiper-container mySwiper2"
+          >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h2>Productivity</h2>
+            </div>
+            <div class="swiper-slide">
+              <h2>Management</h2>
+            </div>
+            <div class="swiper-slide">
+              <h2>Tracking</h2>
+            </div>
+            <div class="swiper-slide">
+              <h2>Payment</h2>
+            </div>
+          </div>
+           
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper slide-text-app">
+              <div class="swiper-slide">
+                <p>
+                  Silent sir say desire fat him letter. Whatever settling
+                  goodness too and honoured she building answered her.
+                  Strongly thoughts remember mr to do consider.
+                </p>
               </div>
-
-
-              <div class="swiper-container gallery-thumbs">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">Productivity</div>
-                  <div class="swiper-slide">Manangement</div>
-                  <div class="swiper-slide">Time tracking</div>
-                  <div class="swiper-slide">Payment</div>
-                  
-                </div>
-                <!-- Add Arrows -->
-                <!-- <div class="swiper-button-next swiper-button-white"></div>
-                <div class="swiper-button-prev swiper-button-white"></div>
+              <div class="swiper-slide">
+                <p>
+                  Silent sir say desire fat him letter. Whatever settling
+                  goodness too and honoured she building answered her.
+                  Strongly thoughts remember mr to do consider.
+                </p>
               </div>
-              <div class="swiper-container gallery-top">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <p> Silent sir say desire fat him letter. Whatever settling
-                      goodness too and honoured she building answered her.
-                      Strongly thoughts remember mr to do consider.</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <p> Silent sir say desire fat him letter. Whatever settling
-                      goodness too and honoured she building answered her.
-                      Strongly thoughts remember mr to do consider.</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <p> Silent sir say desire fat him letter. Whatever settling
-                      goodness too and honoured she building answered her.
-                      Strongly thoughts remember mr to do consider.</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <p> Silent sir say desire fat him letter. Whatever settling
-                      goodness too and honoured she building answered her.
-                      Strongly thoughts remember mr to do consider.</p>
-                  </div>
-                </div>
+              <div class="swiper-slide">
+                <p>
+                  Silent sir say desire fat him letter. Whatever settling
+                  goodness too and honoured she building answered her.
+                  Strongly thoughts remember mr to do consider.
+                </p>
               </div>
-
-
-
-
-              Slider main container
-              <div class="swiper-container test-slider">
-
-                Additional required wrapper
-                <div class="swiper-wrapper">
-                  Slides
-
-                  <div class="swiper-slide">Productivity</div>
-                  <div class="swiper-slide">Manangement</div>
-                  <div class="swiper-slide">Time tracking</div>
-                  <div class="swiper-slide">Payment</div>
-                </div>
+              <div class="swiper-slide">
+                <p>
+                  Silent sir say desire fat him letter. Whatever settling
+                  goodness too and honoured she building answered her.
+                  Strongly thoughts remember mr to do consider.
+                </p>
               </div>
-
-
-
-            </div> --> 
+            </div>
+            
+          </div>
+           </div>
           </div>
         </div>
       </section>
@@ -718,45 +709,27 @@
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
       <script>
-    var galleryThumbs = new Swiper('.gallery-thumbs', {
-      spaceBetween: 10,
-      slidesPerView: 3,
-      freeMode: true,
-      watchSlidesVisibility: true,
-      watchSlidesProgress: true,
-    });
-    var galleryTop = new Swiper('.gallery-top', {
-      spaceBetween: 10,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      thumbs: {
-        swiper: galleryThumbs
-      }
-    });
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- <script>
-        const testSlider = new Swiper(".test-slider", {
-          slidesPerView: 3,
-          spaceBetween: 10,
+       
+        var swiper2 = new Swiper(".mySwiper", {
+          spaceBetween: 50,
+          slidesPerView: 1,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          thumbs: {
+            swiper: swiper,
+          },
         });
-      </script> -->
+        var swiper = new Swiper(".mySwiper2", {
+          spaceBetween: 80,
+          slidesPerView: 3,
+          loop: true,
+          freeMode: false,
+          watchSlidesVisibility: true,
+          watchSlidesProgress: true,
+        });
+      </script>
 
       <!-- PAGINATION SWIPER SECTION -->
 
@@ -788,26 +761,5 @@
         };
       </script>
     </div>
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
   </body>
 </html>
